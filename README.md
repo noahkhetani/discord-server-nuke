@@ -1,4 +1,4 @@
-# Raider
+# Nuker
 
 ### A discord bot to delete all channels , roles , custom emojis and ban all members from a discord server. In short raiding a server.
 
@@ -13,11 +13,12 @@
 - Make sure you have [Python](https://www.python.org/) and [Git](https://git-scm.com/)
 - Create a new app on the [Developer Portal](https://discord.com/developers/applications)
 - Make sure to enable the `Members` intent on the portal
-- Download repo using `git clone https://github.com/kry0sc0pic/Raider.git`
+- give it a bot scope and admin
+- Download repo using `git clone https://github.com/noahkhetani/discord-server-nuke`
 
-- Open the raider folder 
+- Open the nuker folder 
 - Open the `config.json` file
-- Copy and paste the code block and fill in necessary details
+- fill in necessary details in file
     - `TOKEN` bot token from the developer page
     - `TRIGGER` Trigger word to initiate deletion
     - `INVITE_LINK` Invite link for the bot with required permissions integer , used to invite bot to the server to be deleted
@@ -36,14 +37,6 @@
 ```
 
 ## Install Dependencies
-### With virtual environment
-- Install virtualenv module `pip install virtualenv` (only required for using virtual environments)
-- Create a new virtual environment with `virtualenv venv` (optional)
-- Activate with `.\venv\Scripts\activate` for windows
-- Activate with `source ./venv/bin/activate` for macOS and linux
-- Follow Steps for w/o env
-
-### Without virtual environment
 - Install dependecies with `pip install -r requirements.txt` or `pip3 install -r requirements.txt`
 - Run the bot using `python bot.py` or `python3 bot.py`
 
@@ -52,19 +45,12 @@
 
 - Grant all permissions the bot requires or else some operations of the bot may fail
 
-- Find the role for your bot (same as bot username) in `Server Settings >> Roles`
+- make a role with all permissions  
 
-- Move it up to the highest possible position in the role hiearchy
+- go to apps then integrations then select the bot and give it the role
 
-- Give any other necessary roles to the bot to view channels etc.
+- Wait for you or anybody to press the button
 
-- Wait for you or anyone else to type the trigger message in any of the channels and let the bot do its work
-
-## Deploying to [Heroku](https://heroku.com)
-- Only use this if you want your bot to be online at all times
-- In the project folder create a `Procfile` without any file extensions or use the one included
-- Open the file and copy the following text: `worker: python bot.py` and paste it in.
-- Create a new application on Heroku and follow the steps on the deploy tab.
 
 
 ## License
